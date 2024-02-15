@@ -29,6 +29,7 @@ async function sendData() {
     const response = await fetch("https://webhook.site/480a6ad0-20f6-44cb-a26b-b2ec841d2097", {
       method: "POST",
       body: formData,
+      mode: 'no-cors'
     });
     console.log(await response.json());
   } catch (e) {
